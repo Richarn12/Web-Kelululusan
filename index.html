@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Kelulusan SMAN 1 Taekas 2024/2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> </head>
+<body>
+    <div class="gradient-background">
+        <div class="container">
+            <div id="welcome-page">
+                <div class="header-title">
+                    PENGUMUMAN KELULUSAN SISWA <br> SMAN 1 TAEKAS <br> TAHUN PELAJARAN 2024/2025
+                </div>
+                <hr>
+                <h2>Sambutan Kepala Sekolah</h2>
+                <p>
+                    Salam Sejahtera untuk kita semua.
+                </p>
+                <p>
+                    Puji syukur kehadirat Tuhan Yang Maha Esa atas rahmat dan karunia-Nya, pada hari ini, 05 Mei 2025, kita dapat melaksanakan pengumuman kelulusan siswa-siswi kelas XII SMAN 1 Taekas Tahun Pelajaran 2024/2025 secara online.
+                </p>
+                <p>
+                    Kelulusan ini adalah buah dari kerja keras, dedikasi, dan doa dari seluruh siswa, dukungan penuh dari orang tua/wali, serta bimbingan tak kenal lelah dari bapak/ibu guru. Momen ini bukanlah akhir dari perjalanan menuntut ilmu, melainkan gerbang awal menuju tantangan dan kesempatan baru, baik di jenjang pendidikan tinggi maupun di dunia profesional. Teruslah belajar, berkarya, dan junjung tinggi nama baik almamater SMAN 1 Taekas.
+                </p>
+                 <p>
+                    Selamat kami ucapkan kepada seluruh siswa yang dinyatakan LULUS. Semoga kesuksesan senantiasa menyertai langkah ananda sekalian. Bagi yang mungkin hasilnya belum sesuai harapan, jangan putus asa. Teruslah bersemangat, evaluasi diri, dan persiapkan langkah berikutnya dengan lebih baik.
+                </p>
+                <p>
+                   Terimakasih dan Salam SMANTA.
+                </p>
+                <p class="signature"><strong>Kepala Sekolah</strong></p>
+                <br>
+                <button id="cek-button" class="btn btn-primary">Cek Kelulusan Anda</button>
+            </div>
+
+            <div id="results-page" style="display: none;">
+                 <button id="back-button" class="btn btn-secondary back-button">← Kembali</button>
+                <h2>Hasil Kelulusan Siswa</h2>
+                <div class="search-section">
+                    <label for="nisn-input">Masukkan NISN Anda:</label>
+                    <input type="text" id="nisn-input" placeholder="Contoh: 0068057742">
+                    <button id="search-button" class="btn btn-primary">Cari</button>
+                </div>
+
+                <div id="result-display" style="display: none;">
+                    <hr>
+                    <h3>Data Siswa</h3>
+                    <div id="student-info">
+                        </div>
+
+                    <h3>Rincian Nilai</h3>
+                    <div class="table-container">
+                         <table id="grades-table">
+                            <thead>
+                                <tr>
+                                    <th>Mata Pelajaran</th>
+                                    <th>Nilai</th>
+                                </tr>
+                            </thead>
+                            <tbody id="grades-table-body">
+                                </tbody>
+                        </table>
+                    </div>
+
+
+                    <h3>Status Kelulusan</h3>
+                    <p id="graduation-status" class="status"></p> <button id="print-button" class="btn btn-success" style="display: none;"> Cetak Bukti Kelulusan (PDF)</button>
+                </div>
+                 <p id="error-message" class="message error"></p>
+                 <p id="operator-message" class="message operator-msg"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
